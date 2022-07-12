@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   const [price, setPrice] = useState(0)
   const calc = useCallback(() => {
     const insurancePrice = insurance * km
-    const oilPrice = oil * km
+    const oilPrice = (km / kmPerLiter) * oil
     setPrice(insurancePrice + oilPrice)
     setOil(0)
     setInsurance(0)
