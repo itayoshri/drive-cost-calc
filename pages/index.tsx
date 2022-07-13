@@ -31,13 +31,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col justify-center items-center p-4 gap-4">
-        <LabeledInput onChange={setOil} label="מחיר לליטר דלק" />
-        <LabeledInput onChange={setInsurance} label="מחיר לקילומטר בביטוח" />
+        <LabeledInput onChange={setOil} label="מחיר לליטר דלק" emoji="🏷️⛽" />
+        <LabeledInput
+          onChange={setInsurance}
+          label="מחיר לקילומטר בביטוח"
+          emoji="🏷️📋"
+        />
         <LabeledInput
           onChange={setKmPerLiter}
           label="(km/L) קילומטרים לליטר דלק"
+          emoji="⛽"
         />
-        <LabeledInput onChange={setKm} label="(km) מרחק נסיעה" />
+        <LabeledInput onChange={setKm} label="(km) מרחק נסיעה" emoji="🚗" />
         <Button onClick={() => calc()}>חישוב</Button>
       </div>
     </div>
