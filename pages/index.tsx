@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     setInsurance(0)
     setKmPerLiter(0)
     setKm(0)
-  }, [insurance, km, oil])
+  }, [insurance, km, kmPerLiter, oil])
 
   return price == 0 ? (
     <div>
